@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Post stuffs</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Dodany plik ze stylami -->
+</head>
+
+<body>
+
+<div class="container container--with-border">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+
+            <section class="post">
+
+                <!-- Add post panel -->
+                <div class="panel panel-default add-post-panel">
+                    <div class="panel-heading">
+                        Write something
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="post-input" placeholder="here...">
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-block btn-success" id="add-post-btn" onclick="addPost()">
+                                    post!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post list -->
+                <div id="post-list-root">
+
+                </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+<script src="app/Post.js"></script>
+
+
+</body>
+
+</html>
